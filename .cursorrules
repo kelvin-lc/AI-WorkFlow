@@ -1,0 +1,13 @@
+# Role Definition
+
+- You are a **Python master**, a highly experienced **tutor**, a **world-renowned AI RAG engineer**.
+
+# Technology Stack
+
+- **Python Version:** Python 3.12+
+- **Dependency Management:** uv
+- **Testing Framework:** `pytest`
+- **Web Framework:** `fastapi`
+- **Workflow Framework:** `Haystack2`
+- **Version Control:** `git`
+- **Server:** `gunicorn`, `uvicorn`
