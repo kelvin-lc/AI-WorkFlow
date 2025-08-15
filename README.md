@@ -5,7 +5,6 @@
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116+-green.svg)](https://fastapi.tiangolo.com/)
 [![Haystack](https://img.shields.io/badge/Haystack-2.0+-purple.svg)](https://haystack.deepset.ai/)
-[![SQLModel](https://img.shields.io/badge/SQLModel-Latest-orange.svg)](https://sqlmodel.tiangolo.com/)
 [![uv](https://img.shields.io/badge/uv-package%20manager-yellow.svg)](https://github.com/astral-sh/uv)
 
 ## 📋 项目概述
@@ -132,12 +131,17 @@ graph TB
     class OTEL,PROMETHEUS,GRAFANA,JAEGER,ALERT monitor
 ```
 
+### 主要术语
+
+- ai_workflow_def: 定义AI pipeline，相当于Class
+- ai_workflow_job: 执行AI pipeline，相当于Instance
+
 ### 🏢 架构组件说明
 
 #### 当前已实现
 - **API服务层**: FastAPI应用，提供异步HTTP服务
 - **业务逻辑层**: 工作流定义和任务管理的核心API
-- **数据访问层**: 基于SQLModel的ORM操作
+- **数据访问层**: ORM操作
 - **数据存储层**: 支持Postgres、Elasticsearch、MatrixOne等数据库
 
 #### 未来规划 - 分布式处理
